@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MVVM_Architecture">
         <activity
-            android:name=".retrofit_example.RetrofitExamleActivity"
+            android:name=".mvvm_retrofit_room_example.MvvmRetrofitRoomActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,13 +21,24 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".simple_retrofit_example.RetrofitExamleActivity"
+            android:exported="true">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
+        <activity
             android:name=".diff_util_example.DiffUtilActivity"
             android:exported="true">
-            <!--            <intent-filter>-->
-            <!--                <action android:name="android.intent.action.MAIN" />-->
 
-            <!--                <category android:name="android.intent.category.LAUNCHER" />-->
-            <!--            </intent-filter>-->
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
         <activity
             android:name=".mvvm_example.MainActivity"

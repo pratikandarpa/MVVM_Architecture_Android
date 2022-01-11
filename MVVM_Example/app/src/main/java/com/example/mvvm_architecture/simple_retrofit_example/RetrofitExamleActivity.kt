@@ -1,4 +1,4 @@
-package com.example.mvvm_architecture.retrofit_example
+package com.example.mvvm_architecture.simple_retrofit_example
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

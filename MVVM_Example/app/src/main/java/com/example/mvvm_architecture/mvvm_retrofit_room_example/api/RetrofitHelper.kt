@@ -1,4 +1,4 @@
-package com.example.mvvm_architecture.retrofit_example
+package com.example.mvvm_architecture.mvvm_retrofit_room_example.api
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
