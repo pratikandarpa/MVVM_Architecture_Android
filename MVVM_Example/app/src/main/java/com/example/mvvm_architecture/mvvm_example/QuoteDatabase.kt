@@ -1,4 +1,4 @@
-package com.example.mvvm_architecture
+package com.example.mvvm_architecture.mvvm_example
 
 import android.content.Context
 import androidx.room.Database

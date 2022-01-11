@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Pratik/Desktop/AndroidProject/MVVM_Example/app/src/main/res/drawable/item_red.xml" value="0.25833333333333336" />
+        <entry key="..\:/Users/Pratik/Desktop/AndroidProject/MVVM_Example/app/src/main/res/layout/activity_diff_util.xml" value="0.228125" />
         <entry key="..\:/Users/Pratik/Desktop/AndroidProject/MVVM_Example/app/src/main/res/layout/activity_main.xml" value="0.228125" />
+        <entry key="..\:/Users/Pratik/Desktop/AndroidProject/MVVM_Example/app/src/main/res/layout/item_view.xml" value="0.2421875" />
       </map>
     </option>
   </component>

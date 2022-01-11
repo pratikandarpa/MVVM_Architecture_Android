@@ -1,10 +1,11 @@
-package com.example.mvvm_architecture
+package com.example.mvvm_architecture.mvvm_example
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import com.example.mvvm_architecture.R
 import com.example.mvvm_architecture.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
