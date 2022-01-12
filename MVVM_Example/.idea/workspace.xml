@@ -13,23 +13,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="108ed6a1-ed87-4158-a2f7-48f3290be497" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mvvm_architecture/mvvm_retrofit_room_example/MvvmRetrofitRoomActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mvvm_architecture/mvvm_retrofit_room_example/api/QuoteService.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mvvm_architecture/mvvm_retrofit_room_example/api/RetrofitHelper.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mvvm_architecture/mvvm_retrofit_room_example/model/QuoteList.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mvvm_architecture/mvvm_retrofit_room_example/model/Result.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mvvm_architecture/mvvm_retrofit_room_example/repository/QuoteRepository.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mvvm_architecture/mvvm_retrofit_room_example/viewmodels/MainViewModel.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mvvm_architecture/mvvm_retrofit_room_example/viewmodels/MainViewModelFactory.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_mvvm_retrofit_room.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mvvm_architecture/mvvm_retrofit_room_example/QuoteApplication.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mvvm_architecture/mvvm_retrofit_room_example/db/QuoteDAO.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mvvm_architecture/mvvm_retrofit_room_example/db/QuoteDatabase.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mvvm_architecture/mvvm_retrofit_room_example/utils/NetworkUtils.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mvvm_architecture/retrofit_example/QuoteAPI.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mvvm_architecture/simple_retrofit_example/QuoteAPI.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mvvm_architecture/retrofit_example/QuoteList.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mvvm_architecture/simple_retrofit_example/QuoteList.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mvvm_architecture/retrofit_example/Result.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mvvm_architecture/simple_retrofit_example/Result.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mvvm_architecture/retrofit_example/RetrofitExamleActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mvvm_architecture/simple_retrofit_example/RetrofitExamleActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mvvm_architecture/retrofit_example/RetrofitHelper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mvvm_architecture/simple_retrofit_example/RetrofitHelper.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_retrofit_examle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_retrofit_examle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mvvm_architecture/mvvm_retrofit_room_example/MvvmRetrofitRoomActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mvvm_architecture/mvvm_retrofit_room_example/MvvmRetrofitRoomActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mvvm_architecture/mvvm_retrofit_room_example/model/Result.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mvvm_architecture/mvvm_retrofit_room_example/model/Result.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mvvm_architecture/mvvm_retrofit_room_example/repository/QuoteRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mvvm_architecture/mvvm_retrofit_room_example/repository/QuoteRepository.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,15 +69,15 @@
         <option value="layoutResourceFile" />
         <option value="resourceFile" />
         <option value="Kotlin Data Class" />
-        <option value="Kotlin Class" />
         <option value="Kotlin Interface" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/.." value="MVVM+Room" />
+        <entry key="$PROJECT_DIR$/.." value="Retrofit_Coroutine" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -116,6 +109,7 @@
       <recent name="com.example.mvvm_architecture.mvvm_example" />
     </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="com.example.mvvm_architecture.mvvm_retrofit_room_example.db" />
       <recent name="com.example.mvvm_architecture.mvvm_retrofit_room_example.viewmodels" />
       <recent name="com.example.mvvm_architecture.mvvm_retrofit_room_example" />
       <recent name="com.example.mvvm_architecture.mvvm_retrofit_room_example.api" />
@@ -225,13 +219,21 @@
       <option name="project" value="LOCAL" />
       <updated>1641917657352</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="MVVM_AND_Retrofit">
+      <created>1641921695409</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1641921695409</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First Commit" />
     <MESSAGE value="MVVM+Room" />
     <MESSAGE value="List Adapter &amp; DiffUtil" />
-    <option name="LAST_COMMIT_MESSAGE" value="List Adapter &amp; DiffUtil" />
+    <MESSAGE value="MVVM_AND_Retrofit" />
+    <option name="LAST_COMMIT_MESSAGE" value="MVVM_AND_Retrofit" />
   </component>
 </project>

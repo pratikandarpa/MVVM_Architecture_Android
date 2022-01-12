@@ -3,6 +3,7 @@ package com.example.mvvm_architecture.mvvm_retrofit_room_example
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.mvvm_architecture.R
@@ -20,14 +21,18 @@ class MvvmRetrofitRoomActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_mvvm_retrofit_room)
 
-        val quoteService = RetrofitHelper.getInstance().create(QuoteService::class.java)
-        val repository = QuoteRepository(quoteService)
+        val repository = (application as QuoteApplication).quoteRepository
 
         mainViewModel =
             ViewModelProvider(this, MainViewModelFactory(repository)).get(MainViewModel::class.java)
 
         mainViewModel.quotes.observe(this, Observer {
             Log.i("DataData", it.results.toString())
+            Toast.makeText(
+                this@MvvmRetrofitRoomActivity,
+                it.results.size.toString(),
+                Toast.LENGTH_SHORT
+            ).show()
         })
     }
 }
