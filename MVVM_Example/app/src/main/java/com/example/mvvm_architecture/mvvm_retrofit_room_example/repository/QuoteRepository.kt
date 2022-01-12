@@ -14,23 +14,34 @@ class QuoteRepository(
     private val applicationContext: Context
 ) {
 
-    private val quotesLivaData = MutableLiveData<QuoteList>()
+    private val quotesLivaData = MutableLiveData<Response<QuoteList>>()
 
-    val quotes: LiveData<QuoteList>
+    val quotes: LiveData<Response<QuoteList>>
         get() = quotesLivaData
 
     suspend fun getQuotes(page: Int) {
-
         if (NetworkUtils.isNetworkAvailable(applicationContext)) {
-            val result = quoteService.getQuotes(page)
-            if (result?.body() != null) {
-                quoteDatabase.quoteDao().insertQuotes(result.body()!!.results)
-                quotesLivaData.postValue(result.body())
+            try {
+                quotesLivaData.postValue(Response.Loading())
+                val result = quoteService.getQuotes(page)
+                if (result?.body() != null) {
+                    quoteDatabase.quoteDao().insertQuotes(result.body()!!.results)
+                    quotesLivaData.postValue(Response.Success(result.body()))
+                } else {
+                    quotesLivaData.postValue(Response.Error("Error"))
+                }
+            } catch (e: Exception) {
+                quotesLivaData.postValue(Response.Error(e.message.toString()))
             }
+
         } else {
-            val quotes = quoteDatabase.quoteDao().getQuotes()
-            val quoteList = QuoteList(1, 1, 1, quotes, 1, 1)
-            quotesLivaData.postValue(quoteList)
+            try {
+                val quotes = quoteDatabase.quoteDao().getQuotes()
+                val quoteList = QuoteList(1, 1, 1, quotes, 1, 1)
+                quotesLivaData.postValue(Response.Success(quoteList))
+            } catch (e: Exception) {
+                quotesLivaData.postValue(Response.Error(e.message.toString()))
+            }
         }
     }
 }
